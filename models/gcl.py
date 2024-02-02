@@ -259,9 +259,7 @@ class E_GCL_vel(E_GCL):
           global_agg: Global aggregation function ('attn' or 'sum').
           temp: Softmax temperature.
     """
-
-
-    def __init__(self, input_nf, output_nf, hidden_nf, edges_in_d=0, nodes_att_dim=0, act_fn=nn.ReLU(), recurrent=True, coords_weight=1.0, attention=False, norm_diff=False, tanh=False):
+    def __init__(self, input_nf=3, output_nf=3, hidden_nf=16, edges_in_d=0, nodes_att_dim=0, act_fn=nn.ReLU(), recurrent=True, coords_weight=1.0, attention=False, norm_diff=False, tanh=False):
         E_GCL.__init__(self, input_nf, output_nf, hidden_nf, edges_in_d=edges_in_d, nodes_att_dim=nodes_att_dim, act_fn=act_fn, recurrent=recurrent, coords_weight=coords_weight, attention=attention, norm_diff=norm_diff, tanh=tanh)
         self.norm_diff = norm_diff
         self.coord_mlp_vel = nn.Sequential(

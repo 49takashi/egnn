@@ -1,6 +1,6 @@
 import torch
 from torch import nn
-from models.gcl import GCL, E_GCL, E_GCL_vel, GCL_rf_vel
+from egnn.models.gcl import GCL, E_GCL, E_GCL_vel, GCL_rf_vel
 
 
 

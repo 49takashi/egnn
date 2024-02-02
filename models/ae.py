@@ -1,6 +1,6 @@
 from torch import nn
 import torch
-from models.gcl import GCL, GCL_rf, E_GCL
+from egnn.models.gcl import GCL, GCL_rf, E_GCL
 
 class AE_parent(nn.Module):
     """Graph Neural Net with global state and fixed number of nodes per graph.
